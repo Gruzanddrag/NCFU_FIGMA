@@ -1,0 +1,81 @@
+.card-buy {
+    width: 100%;
+    background: #C4C4C4;
+    display: flex;
+    color: #818181;
+    margin-bottom: 2em;
+}
+
+.card-buy .card-buy-image {
+    max-width: 300px;
+    margin: 0;
+    min-width: 20%;
+}
+
+.card-buy .card-buy-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2em;
+    min-width: 75%;
+}
+
+.card-buy-info--price .label, .card-buy-info--rate .label{
+    color: black;
+    font-weight: bold;
+}
+
+.card-buy-info--price {
+    font-size: 130%;
+}
+
+.card-buy-info--rate {
+    margin-bottom: 2em;
+}
+
+.card-buy-actions {
+    margin: auto 0;
+}
+.card-buy-actions p {
+    text-align: center;
+    background: #F0F0F0;
+    padding: 1em 0;
+}
+.card-buy-actions {
+    width: 100%;
+}
+.card-buy-actions button{
+    width: 100%;
+    color: #F0F0F0;
+    background: #A3A3A3;
+    border: none;
+}
+
+
+@media (max-width: 992px) {
+    .card-buy .card-buy-info {
+        min-width: 70%;
+    }
+}
+
+.summary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #C4C4C4;
+    margin: 0;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.summary-action {
+    display: flex;
+}
+
+.summary-action button {
+    border: none;
+    background: #73D36B;
+    color: white;
+    font-weight: bold;
+    padding: 0 1em;
+}

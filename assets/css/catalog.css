@@ -1,0 +1,91 @@
+.card {
+    margin: 0 10px 20px;
+}
+.catalog {
+    margin-bottom: 5em;
+}
+
+.catalog--card-top {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.catalog--card-top img {
+    width: 100%;
+}
+
+.catalog--card-top .catalog--card-top-label {
+    width: 100%;
+    position: absolute;
+    padding: 20px 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    backdrop-filter: blur(5px) brightness(50%);
+}
+
+.info-div {
+    display: flex;
+    margin: 0 20px;
+}
+.info-div p:first-of-type {
+    margin-right: 5px;
+}
+
+.catalog--card-bottom-actions {
+    display: flex;
+}
+
+.catalog--card-bottom-actions a {
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+.buy-btn {
+    background: #73D36B;
+}
+.info-btn {
+    background: #AEB3BE;
+}
+
+.filter {
+    display: flex;
+    background: #BBBBBB;
+    flex-direction: column;
+    width: 270px;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -270px;
+    padding: 40px 20px;
+    height: 400px;
+}
+
+.filter input, .filter select{
+    padding: 10px;
+    border: none;
+}
+
+.filter .buy-btn {
+    color: white;
+}
+
+.filter h3 {
+    font-weight: bold;
+    color: white;
+}
+
+
+@media (max-width: 1723px) { 
+    .filter{
+        position: relative;
+        left: 0;
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+}

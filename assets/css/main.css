@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #eeeeee;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+header .header-menu {
+    display: flex;
+}
+
+header .header-menu a {
+    font-weight: bold;
+    margin-left: 30px;
+    color: rgb(192, 192, 192);
+}
+
+header .header-menu .active-link {
+    color: #585858;
+}
+
+header .header-menu a:hover {
+    text-decoration: none;
+    color: #585858;
+}
+
+.main-section {
+    color: #585858;
+    margin-bottom: 10em;
+}
+
+.main-section .section-header {
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+.main-section .section-text {
+    text-align: justify;
+}
+.main-section .section-text p {
+    text-indent: 5em;
+    font-size: 14pt;
+    margin-bottom: 50px;
+}
+.main-section .section-text p::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+.section-welcome-bottom {
+    display: flex;
+    padding: 0 5em;
+}
+
+.section-welcome-bottom img {
+    width: 350px;
+}
+
+.section-uri-bottom img {
+    width: 100%;
+}
+.section-welcome-bottom-links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-welcome-bottom-links a:first-of-type {
+    margin-bottom: 20px;
+}
+
+.section-welcome-bottom-links a {
+    background: #DCDCDC;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    color: #A4A4A4;
+}
+
+.section-welcome-bottom-links a:hover{
+    text-decoration: none;
+    color: #585858;
+    font-weight: bold;
+}
+
+.page-header {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    color: white;
+}
+
+footer .navigation,.adds {
+    padding: 40px;
+}
+
+footer .navigation .section-header,.adds .section-header{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer a, footer p{
+    color: #AAAAAA;
+}
+
+footer p{
+    text-decoration: underline;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 10pt;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer > div {
+    position: relative;
+}
+
+footer div:not(:last-child)::after {
+    content: "";
+    border: 1px solid #707070;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -1px;
+}
+
+.extended-footer {
+    background: #1A1A1A;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.extended-footer p {
+    color: #626262;
+    margin: auto;
+}
+
+
+@media (max-width: 576px) { 
+
+    footer > div {
+        width: 50%;
+        height: 80%;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    footer > div ul  {
+        margin-left: -3em;
+    }
+
+    footer {
+        width: 100vw;
+        /* margin-left: -15px; */
+    }
+
+    footer > .adds, footer > .navigation {
+        padding: 0 10px;
+    }
+
+    footer h3, footer p, footer a {
+        font-size: 90%;
+    }
+}
+@media (max-width: 768px) { 
+    
+    header {
+        display: none;
+    }
+
+    .section-welcome-bottom {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-welcome-bottom img {
+        width: 250px;
+    }
+    .section-welcome-bottom-links {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
